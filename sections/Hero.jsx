@@ -14,7 +14,7 @@ import {
 
 function Hero() {
   return (
-    <section className="w-full bg-gray-50 py-12 pt-44 px-12 min-h-screen">
+    <section className="w-full bg-gray-100 py-12 pt-44 px-12 min-h-screen">
       <div className="relative w-full">
         {/* HERO IMAGE */}
         <div
@@ -97,7 +97,7 @@ function Hero() {
           z-20
           w-[600px]
           max-w-[50%]
-          bg-gray-50
+          bg-gray-100
           pl-6
           pt-6
 
@@ -330,7 +330,7 @@ function Hero() {
       </div>
 
       {/* Feature Bar */}
-      <div className="mx-auto mt-10 border-t border-b border-[#bdc1c2] py-3">
+      <div className="mx-auto mt-10 border-t border-b border-[#bdc1c2] py-3 bg-white">
         <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
           <Feature
             icon={<ShieldCheck size={24} />}
