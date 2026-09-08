@@ -29,30 +29,30 @@ function Navbar() {
     <>
       {/* desktop-nav */}
       <nav className="hidden md:block fixed top-0 left-0 z-50 w-full">
-        <div className="w-full hidden lg:flex items-center justify-between gap-4 lg:px-12 px-5 bg-[#eaf8fa] py-3 text-black">
-          <p className="flex items-center gap-3">
-            <FcGoogle size={28} />
+        <div className="w-full hidden lg:flex items-center justify-between gap-4 lg:px-12 px-5 bg-[#eaf8fa] py-2 text-black">
+          <p className="flex items-center gap-3 text-sm">
+            <FcGoogle size={20} />
             Rated 5.0 on Google
           </p>
-          <div className="flex items-center gap-12">
-            <p className="flex items-center gap-3">
-              <RiShareCircleLine size={22} className="text-green" />
+          <div className="flex items-center gap-10">
+            <p className="flex items-center gap-3 text-sm">
+              <RiShareCircleLine size={20} className="text-green" />
               250k+ Journeys
             </p>
-            <p className="flex items-center gap-3">
-              <BsFillTicketPerforatedFill size={22} className="text-green" />
+            <p className="flex items-center gap-3 text-sm">
+              <BsFillTicketPerforatedFill size={20} className="text-green" />
               Zero hidden fees
             </p>
-            <p className="flex items-center gap-3">
-              <FaBus size={22} className="text-green" />
+            <p className="flex items-center gap-3 text-sm">
+              <FaBus size={20} className="text-green" />
               Terminal transfer included
             </p>
           </div>
           <p className="flex items-center gap-3">
-            <FaBlenderPhone size={28} className="text-green" />
+            <FaBlenderPhone size={20} className="text-green" />
             <div>
-              <p className="text-sm text-gray-500">Give us a call</p>
-              <p className="text-lg font-extrabold">0324 4748625</p>
+              <p className="text-xs text-gray-500">Give us a call</p>
+              <p className="text-base font-extrabold">0324 4748625</p>
             </div>
           </p>
         </div>
