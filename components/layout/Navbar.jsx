@@ -29,7 +29,7 @@ function Navbar() {
     <>
       {/* desktop-nav */}
       <nav className="hidden md:block fixed top-0 left-0 z-50 w-full">
-        <div className="w-full hidden lg:flex items-center justify-between gap-4 lg:px-16 px-5 bg-[#eaf8fa] py-3">
+        <div className="w-full hidden lg:flex items-center justify-between gap-4 lg:px-12 px-5 bg-[#eaf8fa] py-3 text-black">
           <p className="flex items-center gap-3">
             <FcGoogle size={28} />
             Rated 5.0 on Google
@@ -56,7 +56,7 @@ function Navbar() {
             </div>
           </p>
         </div>
-        <div className="flex items-center justify-between gap-4 lg:px-16 px-5 py-6 bg-white backdrop-blur-3xl">
+        <div className="flex items-center justify-between gap-4 lg:px-12 px-5 py-5 bg-white backdrop-blur-3xl text-black">
           {/* Logo */}
           <Link href="/">
             <Image

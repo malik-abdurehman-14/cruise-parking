@@ -1,5 +1,6 @@
 "use client";
 
+import { Button } from "@/components/ui/Button";
 import {
   CalendarDays,
   ChevronDown,
@@ -12,7 +13,7 @@ import {
 
 function Hero() {
   return (
-    <section className="w-full bg-white py-12 pt-44 px-16 min-h-screen">
+    <section className="w-full bg-gray-50 py-12 pt-44 px-12 min-h-screen">
       <div className="relative w-full">
         {/* HERO IMAGE */}
         <div
@@ -93,9 +94,9 @@ function Hero() {
           z-20
           w-[600px]
           max-w-[50%]
-          bg-white
-          pl-8
-          pt-8
+          bg-gray-50
+          pl-6
+          pt-6
 
           rounded-tl-[38px]
           rounded-tr-[0px]
@@ -110,41 +111,41 @@ function Hero() {
               className="
             rounded-[20px]
             border
-            border-[#e1edf0]
+            border-[#d7ecf1]
             bg-white
             p-5
             shadow-[0_8px_30px_rgba(0,0,0,0.06)]
           "
             >
               {/* Header */}
-              <h2 className="mb-4 text-[15px] font-bold text-[#152b43]">
+              <h2 className="mb-4 text-lg font-bold text-[#152b43]">
                 Check Availability
               </h2>
 
-              <div className="mb-4 h-px w-full bg-[#e8eef0]" />
+              <div className="mb-5 h-px w-full bg-[#cbcfd0]" />
 
               {/* Fields */}
-              <div className="grid grid-cols-2 gap-x-3 gap-y-3">
+              <div className="grid grid-cols-2 gap-x-4 gap-y-4">
                 {/* Cruise Ship */}
                 <div>
-                  <label className="mb-1 block text-[12px] font-bold text-[#152b43]">
+                  <label className="mb-1 block text-sm font-bold text-[#152b43]">
                     Cruise Ship
                   </label>
 
                   <div className="relative">
                     <select
                       className="
-                    h-[38px]
+                    h-[40px]
                     w-full
                     appearance-none
                     rounded-[5px]
                     border
-                    border-[#cbd5da]
+                    border-[#c4c8ca]
                     bg-white
                     px-3
                     pr-8
-                    text-[11px]
-                    text-[#b7c0c6]
+                    text-sm
+                    text-black
                     outline-none
                     focus:border-[#167c87]
                   "
@@ -156,7 +157,7 @@ function Hero() {
                     </select>
 
                     <ChevronDown
-                      size={15}
+                      size={18}
                       className="
                     pointer-events-none
                     absolute
@@ -171,7 +172,7 @@ function Hero() {
 
                 {/* Departure Date */}
                 <div>
-                  <label className="mb-1 block text-[12px] font-bold text-[#152b43]">
+                  <label className="mb-1 block text-sm font-bold text-[#152b43]">
                     Departure Date
                   </label>
 
@@ -179,22 +180,22 @@ function Hero() {
                     <input
                       type="date"
                       className="
-                    h-[38px]
+                    h-[40px]
                     w-full
                     rounded-[5px]
                     border
-                    border-[#cbd5da]
+                   border-[#c4c8ca]
                     bg-white
                     px-3
-                    text-[11px]
-                    text-[#b7c0c6]
+                    text-sm
+                    text-black
                     outline-none
                     focus:border-[#167c87]
                   "
                     />
 
                     <CalendarDays
-                      size={14}
+                      size={18}
                       className="
                     pointer-events-none
                     absolute
@@ -209,24 +210,24 @@ function Hero() {
 
                 {/* Return Cruise Ship */}
                 <div>
-                  <label className="mb-1 block text-[12px] font-bold text-[#152b43]">
+                  <label className="mb-1 block text-sm font-bold text-[#152b43]">
                     Return Cruise Ship
                   </label>
 
                   <div className="relative">
                     <select
                       className="
-                    h-[38px]
+                    h-[40px]
                     w-full
                     appearance-none
                     rounded-[5px]
                     border
-                    border-[#cbd5da]
+                    border-[#c4c8ca]
                     bg-white
                     px-3
                     pr-8
-                    text-[11px]
-                    text-[#b7c0c6]
+                    text-sm
+                    text-black
                     outline-none
                     focus:border-[#167c87]
                   "
@@ -238,7 +239,7 @@ function Hero() {
                     </select>
 
                     <ChevronDown
-                      size={15}
+                      size={18}
                       className="
                     pointer-events-none
                     absolute
@@ -253,7 +254,7 @@ function Hero() {
 
                 {/* Return Date */}
                 <div>
-                  <label className="mb-1 block text-[12px] font-bold text-[#152b43]">
+                  <label className="mb-1 block text-sm font-bold text-[#152b43]">
                     Return Date
                   </label>
 
@@ -261,22 +262,22 @@ function Hero() {
                     <input
                       type="date"
                       className="
-                    h-[38px]
+                    h-[40px]
                     w-full
                     rounded-[5px]
                     border
-                    border-[#cbd5da]
+                   border-[#c4c8ca]
                     bg-white
                     px-3
-                    text-[11px]
-                    text-[#b7c0c6]
+                    text-sm
+                    text-black
                     outline-none
                     focus:border-[#167c87]
                   "
                     />
 
                     <CalendarDays
-                      size={14}
+                      size={18}
                       className="
                     pointer-events-none
                     absolute
@@ -291,45 +292,33 @@ function Hero() {
               </div>
 
               {/* Same ship */}
-              <label className="mt-4 flex cursor-pointer items-center gap-2">
+              <label className="my-5 flex cursor-pointer items-center gap-2">
                 <input
                   type="checkbox"
                   className="peer sr-only"
                   defaultChecked
                 />
 
-                <span className="flex h-[17px] w-[17px] items-center justify-center rounded-[3px] bg-[#197c87]">
+                <span className="flex h-[20px] w-[20px] items-center justify-center rounded-[3px] bg-[#197c87]">
                   <Check size={12} strokeWidth={4} className="text-white" />
                 </span>
 
-                <span className="text-[11px] font-bold text-[#152b43]">
+                <span className="text-sm font-bold text-[#152b43]">
                   Same ship for return
                 </span>
               </label>
 
               {/* Button */}
-              <button
-                type="button"
-                className="
-              mt-4
-              h-[35px]
-              w-full
-              rounded-full
-              bg-[#197c87]
-              text-[11px]
-              font-bold
-              text-white
-              transition-all
-              duration-200
-              hover:bg-[#126a74]
-              hover:shadow-md
-            "
-              >
-                Check Availability
-              </button>
+              <Button
+                title="Check Availability"
+                variant="light"
+                padding="py-2 px-4"
+                width="w-full"
+                className="rounded-full"
+              />
 
               {/* Bottom text */}
-              <p className="mt-3 text-center text-[11px] font-medium text-red-500">
+              <p className="mt-3 text-center text-sm font-medium text-red-500">
                 See availability before paying
               </p>
             </div>
@@ -383,7 +372,7 @@ function Feature({ icon, title, description }) {
           {title}
         </h3>
 
-        <p className="mt-0.5 text-sm text-[#91a2ad]">{description}</p>
+        <p className="mt-0.5 text-sm text-gray-800">{description}</p>
       </div>
     </div>
   );
