@@ -34,3 +34,26 @@ body {
 }
 
 
+.water-effect {
+  position: absolute;
+  inset: -50%;
+  background:
+    radial-gradient(ellipse at center,
+      rgba(255, 255, 255, 0.18) 0%,
+      transparent 60%);
+  animation: waterMove 4s ease-in-out infinite;
+}
+
+@keyframes waterMove {
+  0% {
+    transform: translateX(-15%) rotate(0deg);
+  }
+
+  50% {
+    transform: translateX(15%) rotate(3deg);
+  }
+
+  100% {
+    transform: translateX(-15%) rotate(0deg);
+  }
+}

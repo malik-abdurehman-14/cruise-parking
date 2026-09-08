@@ -1,5 +1,6 @@
 "use client";
 
+import "../app/globals.css";
 import { Button } from "@/components/ui/Button";
 import {
   CalendarDays,
@@ -19,7 +20,7 @@ function Hero() {
         <div
           className="
         relative
-        h-[650px]
+        h-[600px]
         w-full
         overflow-hidden
         rounded-[32px]
@@ -34,14 +35,16 @@ function Hero() {
           <div className="absolute inset-0 bg-[#006b78]/35" />
 
           {/* Dark gradient */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/15 to-transparent" />
+          {/* <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/15 to-transparent" /> */}
 
           {/* HERO CONTENT */}
           <div className="relative z-10 flex h-full items-end">
             <div className="w-full max-w-[680px] px-8 pb-10 lg:px-6">
               {/* Badge */}
-              <div className="mb-4 inline-flex items-center rounded-full border border-white/50 bg-white/10 px-3 py-1 text-[15px] font-semibold text-white backdrop-blur-sm">
-                Southampton Port Parking
+              <div className="relative mb-4 inline-flex overflow-hidden items-center rounded-full border border-white/50 bg-white/10 px-3 py-1 text-[15px] font-semibold text-white backdrop-blur-md">
+                <div className="water-effect" />
+
+                <span className="relative z-10">Southampton Port Parking</span>
               </div>
 
               {/* Heading */}
@@ -98,7 +101,7 @@ function Hero() {
           pl-6
           pt-6
 
-          rounded-tl-[38px]
+          rounded-tl-[28px]
           rounded-tr-[0px]
           rounded-bl-[0px]
           rounded-br-[22px]
@@ -327,7 +330,7 @@ function Hero() {
       </div>
 
       {/* Feature Bar */}
-      <div className="mx-auto mt-10 border-t border-[#edf0f1] pt-3">
+      <div className="mx-auto mt-10 border-t border-b border-[#bdc1c2] py-3">
         <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
           <Feature
             icon={<ShieldCheck size={24} />}
@@ -362,7 +365,7 @@ export default Hero;
 
 function Feature({ icon, title, description }) {
   return (
-    <div className="flex items-center gap-3 border-r border-[#e5eaec] px-2 last:border-none md:px-4">
+    <div className="flex items-center gap-3 border-r border-[#bdc1c2] px-2 last:border-none md:px-4">
       <div className="flex h-[40px] w-[40px] shrink-0 items-center justify-center rounded-full bg-[#d8f4f8] text-[#147b87]">
         {icon}
       </div>
