@@ -49,7 +49,7 @@ export function Faqs() {
   };
 
   return (
-    <section className="w-full flex flex-col gap-10 py-16 px-12 items-center">
+    <section className="w-full flex flex-col gap-10 py-16 px-12 items-center bg-white">
       {/* Header */}
       <div className="w-full flex flex-col gap-3 justify-center items-center">
         <p className="text-sm text-green uppercase">NEED TO KNOW</p>
