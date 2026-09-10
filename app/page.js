@@ -2,6 +2,9 @@
 
 import Navbar from "@/components/layout/Navbar";
 import Brands from "@/sections/Brands";
+import Cta from "@/sections/Cta";
+import Departure from "@/sections/Departure";
+import { Faqs } from "@/sections/Faqs";
 import Hero from "@/sections/Hero";
 import Process from "@/sections/Process";
 import Reviews from "@/sections/Reviews";
@@ -18,6 +21,9 @@ export default function Home() {
       <Brands />
       <WhyUs />
       <Reviews />
+      <Departure />
+      <Faqs />
+      <Cta />
     </>
   );
 }
