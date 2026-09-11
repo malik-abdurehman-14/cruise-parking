@@ -49,7 +49,7 @@ export function Faqs() {
   };
 
   return (
-    <section className="w-full flex flex-col gap-10 py-16 px-12 items-center bg-white">
+    <section className="w-full flex flex-col gap-10 py-16 px-12 items-center bg-gray-100">
       {/* Header */}
       <div className="w-full flex flex-col gap-3 justify-center items-center">
         <p className="text-sm text-green uppercase">NEED TO KNOW</p>
@@ -70,7 +70,7 @@ export function Faqs() {
           return (
             <div
               key={faq.id}
-              className="bg-white border-b border-gray-700 rounded-lg px-6 transition-all"
+              className="bg-gray-100 border-b border-gray-700 rounded-lg px-6 transition-all"
             >
               {/* Question */}
               <button

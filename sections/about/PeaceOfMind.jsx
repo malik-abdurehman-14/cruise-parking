@@ -35,7 +35,7 @@ function PeaceOfMind() {
     },
   ];
   return (
-    <section className="w-full px-12 py-14 flex gap-10 bg-gray-100">
+    <section className="w-full px-12 py-28 flex gap-10 bg-gray-100">
       <div className="w-[50%]">
         <img
           className="rounded-xl h-[65vh] w-full object-cover"

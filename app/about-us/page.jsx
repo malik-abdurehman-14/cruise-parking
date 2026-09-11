@@ -15,7 +15,12 @@ function page() {
   return (
     <>
       <Navbar />
-      <ReuseableHero />
+      <ReuseableHero
+        img="/about-hero.png"
+        heading=" We Look After Your Car Like It's Our Own"
+        text="Family-run since 2015 · Southampton's most trusted cruise parking
+              service. Start your holiday knowing everything is safe."
+      />
       <OurStory />
       <OurTeam />
       <WhatDrivesUs />

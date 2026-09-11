@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function Cta() {
   return (
-    <section className="w-full py-14 px-12 bg-white">
+    <section className="w-full py-14 px-12 bg-gray-100">
       <div className="w-full">
         <div className="group relative sm:h-[350px] h-[250px] rounded-2xl overflow-hidden flex flex-col justify-end w-full">
           {" "}

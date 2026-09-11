@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import FeatureBar from "./FeatureBar";
 
-function ReuseableHero() {
+function ReuseableHero({ heading, text, img }) {
   return (
     <section className="w-full bg-gray-100 py-12 pt-40 px-12">
       <div className="w-full">
@@ -30,14 +30,10 @@ function ReuseableHero() {
             >
               Est. 2015 · Family-Run
             </div>
-            <p className="text-5xl font-extrabold poppins max-w-xl leading-14">
-              We Look After Your Car Like It's Our Own
+            <p className="text-5xl font-extrabold poppins max-w-2xl leading-14">
+              {heading}
             </p>{" "}
-            <p className="text-base leading-6 max-w-2xl">
-              {" "}
-              Family-run since 2015 · Southampton's most trusted cruise parking
-              service. Start your holiday knowing everything is safe.
-            </p>{" "}
+            <p className="text-base leading-6 max-w-2xl"> {text}</p>{" "}
           </div>{" "}
         </div>
       </div>

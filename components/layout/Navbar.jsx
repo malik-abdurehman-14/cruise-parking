@@ -20,9 +20,9 @@ function Navbar() {
 
   const navLinks = [
     { name: "About Us", link: "/about-us" },
-    { name: "Our Locations", link: "/" },
-    { name: "Blogs", link: "/" },
-    { name: "Contact", link: "/" },
+    { name: "Our Locations", link: "/our-locations" },
+    { name: "Blogs", link: "/blogs" },
+    { name: "Contact", link: "/contact-us" },
   ];
 
   return (
