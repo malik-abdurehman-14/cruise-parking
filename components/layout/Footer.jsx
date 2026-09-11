@@ -13,7 +13,7 @@ function Footer() {
   ];
   return (
     <div className="bg-[#001215] lg:px-16 px-5 py-8 flex justify-between w-full gap-10 text-white h-[45vh]">
-      <div className="flex flex-col gap-5 justify-between h-full w-[25%]">
+      <div className="flex flex-col gap-5 justify-between h-full w-[20%]">
         <img className="w-[200px] h-fit" src="/footer-logo.png" alt="" />
         <div className="flex items-center gap-3 h-fit">
           {socialLinks.map((item, index) => (
@@ -27,7 +27,7 @@ function Footer() {
           ))}
         </div>
       </div>
-      <div className="flex flex-col gap-5 justify-between h-full w-[75%]">
+      <div className="flex flex-col gap-5 justify-between h-full w-[80%]">
         <div className="flex gap-10 justify-between">
           <div className="flex flex-col gap-2">
             <p className="text-green font-bold text-2xl poppins">Explore</p>
@@ -96,7 +96,7 @@ function Footer() {
             <p className="text-green font-mono text-xs uppercase">
               Subscription
             </p>
-            <div className="flex items-center border border-gray-500 rounded-lg w-[400px] overflow-hidden mt-1">
+            <div className="flex items-center border border-gray-500 rounded-lg w-[350px] overflow-hidden mt-1">
               <input
                 type="email"
                 placeholder="E-MAIL"
