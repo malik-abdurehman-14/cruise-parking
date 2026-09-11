@@ -19,7 +19,7 @@ function Navbar() {
   const [menuDrawerOpen, setMenuDrawerOpen] = useState(false);
 
   const navLinks = [
-    { name: "About Us", link: "/" },
+    { name: "About Us", link: "/about-us" },
     { name: "Our Locations", link: "/" },
     { name: "Blogs", link: "/" },
     { name: "Contact", link: "/" },
