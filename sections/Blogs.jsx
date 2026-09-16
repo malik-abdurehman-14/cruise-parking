@@ -1,5 +1,7 @@
+import BlogsCard from "@/components/layout/BlogsCard";
 import { Button } from "@/components/ui/Button";
 import Input from "@/components/ui/Input";
+import Link from "next/link";
 import React from "react";
 
 function Blogs() {
@@ -145,41 +147,15 @@ function Blogs() {
         <h4 className="text-3xl font-extrabold poppins">Latest Articles</h4>
         <div className="grid grid-cols-3 gap-7 w-full">
           {cards.map((item, index) => (
-            <div className="bg-white rounded-2xl flex flex-col w-full">
-              <div className="h-[200px]">
-                <img
-                  className="rounded-t-2xl w-full h-full object-cover"
-                  src={item.img}
-                  alt={item.category}
-                />
-              </div>
-              <div className="py-4 px-6 flex flex-col justify-center h-full gap-3">
-                <p className="flex items-center justify-between w-full">
-                  <div className="bg-[#b4e7f0] text-green px-3 py-1 text-sm rounded-full">
-                    {item.category}
-                  </div>
-                  <p className="text-sm">{item.time} read</p>
-                </p>
-                <h3 className="text-xl font-extrabold poppins">{item.title}</h3>
-                <p className="text-sm">{item.desc}</p>
-                <p className="flex items-center justify-between w-full">
-                  <div className="flex items-center gap-3 text-sm">
-                    <img
-                      className="w-9 h-9 rounded-full object-cover"
-                      src={item.writterImg}
-                      alt=""
-                    />
-                    <div>
-                      <p className="text-sm font-semibold">{item.writter}</p>
-                      <p>28 Aug 2026</p>
-                    </div>
-                  </div>
-                  <a href="#" className="text-sm text-green">
-                    Read Article
-                  </a>
-                </p>
-              </div>
-            </div>
+            <BlogsCard
+              img={item.img}
+              category={item.category}
+              time={item.time}
+              title={item.title}
+              desc={item.desc}
+              writterImg={item.writterImg}
+              writter={item.writter}
+            />
           ))}
         </div>
         {/* button */}
