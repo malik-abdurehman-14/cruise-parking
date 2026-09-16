@@ -12,7 +12,6 @@ function page() {
       <Navbar />
       <Breadcrumbs />
       <Packages />
-      {/* <Cta /> */}
       <Footer />
     </>
   );

@@ -37,6 +37,7 @@ function Packages() {
           <p className="text-green text-lg">Your Booking Summary</p>
           <div>
             <Button
+              link="/checkout"
               title="Proceed Payment"
               variant="light"
               padding="px-8 py-1"
