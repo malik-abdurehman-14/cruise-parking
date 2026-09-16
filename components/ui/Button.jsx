@@ -36,7 +36,7 @@ const buttonVariants = cva(
         dark: "bg-white text-green hover:text-white hover:bg-green border-green hover:border-white",
 
         light:
-          "bg-green text-white hover:text-green hover:bg-white border-green ",
+          "bg-green text-white hover:text-green hover:bg-white border-green",
       },
 
       size: {
@@ -67,18 +67,18 @@ function Button({
   textColor,
   padding,
   textSize,
-  href,
+  link,
   title,
   width,
   ...props
 }) {
   const customClasses = cn(bg, textColor, padding, textSize, width);
 
-  // Agar href diya hai to button ki jagah link render hoga
-  if (href) {
+  // Agar link prop diya hai to <a> render hoga
+  if (link) {
     return (
       <a
-        href={href}
+        href={link}
         className={cn(
           buttonVariants({ variant, size }),
           customClasses,
@@ -90,6 +90,7 @@ function Button({
     );
   }
 
+  // Agar link nahi diya to normal button rahega
   return (
     <ButtonPrimitive
       data-slot="button"

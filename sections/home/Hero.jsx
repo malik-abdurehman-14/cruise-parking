@@ -314,6 +314,7 @@ function Hero() {
 
               {/* Button */}
               <Button
+                link="/booking"
                 title="Check Availability"
                 variant="light"
                 padding="py-2 px-4"
