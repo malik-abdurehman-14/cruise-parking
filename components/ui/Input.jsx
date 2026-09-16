@@ -30,6 +30,16 @@ function Input({
       "placeholder:text-gray-400",
       "focus:border-froozen focus:ring-1 focus:ring-froozen",
     ],
+
+    light: [
+      "border-green",
+      "bg-white",
+      "text-black text-sm",
+      "py-4",
+      "rounded-xl",
+      "placeholder:text-gray-400",
+      "focus:border-green focus:ring-1 focus:ring-green",
+    ],
   };
 
   return (
