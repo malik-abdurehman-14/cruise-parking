@@ -20,7 +20,7 @@ function Breadcrumbs() {
       ? 2
       : pathname === "/checkout"
         ? 3
-        : pathname === "/confirmation"
+        : pathname === "/booking-confirmation"
           ? 4
           : 1;
 
