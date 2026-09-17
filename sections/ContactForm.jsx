@@ -3,10 +3,10 @@ import Input from "@/components/ui/Input";
 
 function ContactForm() {
   return (
-    <section className="w-full px-12 py-24 flex gap-10 bg-gray-100">
-      <div className="flex flex-col gap-4 w-[50%] h-auto">
+    <section className="w-full lg:px-12 px-6 lg:py-24 py-10 flex lg:flex-row flex-col md:gap-10 gap-7 bg-gray-100">
+      <div className="flex flex-col gap-4 lg:w-[50%] w-full h-auto">
         <p className="text-sm text-green uppercase">online inquiry</p>
-        <p className="text-5xl font-extrabold poppins max-w-xl">
+        <p className="sm:text-5xl text-3xl font-extrabold poppins max-w-xl">
           Send Us a <span className="text-green">Message.</span>
         </p>
         <p className="text-lg">
@@ -25,7 +25,7 @@ function ContactForm() {
             className="mt-1"
           />
         </div>
-        <div className="flex items-center sm:gap-4 gap-3 w-full">
+        <div className="fle flex sm:flex-row flex-col items-center sm:gap-4 gap-3 w-full">
           <div className="w-full">
             <p className="font-bold">Phone No (Optional)</p>
             <Input
@@ -56,9 +56,9 @@ function ContactForm() {
           Southampton team reads every message.
         </p>
       </div>
-      <div className="w-[50%] h-fit">
+      <div className="lg:w-[50%] w-full h-fit">
         <img
-          className="rounded-xl h-[90vh] w-full object-cover"
+          className="rounded-xl lg:h-[90vh] h-[40vh] w-full object-cover"
           src="/contact.png"
           alt=""
         />

@@ -79,21 +79,21 @@ function page() {
         heading="Wherever You're Sailing or Flying From, We've Got You Covered."
         text="Find your nearest secure parking location and book in seconds."
       />
-      <section className="w-full flex flex-col gap-9 bg-gray-100 py-16 px-12">
-        <div className="flex flex-col gap-3 w-full">
+      <section className="w-full flex flex-col gap-9 bg-gray-100 sm:py-16 pb-12 pt-8 lg:px-12 px-6">
+        <div className="flex flex-col gap-3 md:items-start items-center md:justify-start justify-center w-full">
           <p className="text-sm text-green uppercase">OUR LOCATIONS</p>
-          <p className="text-5xl font-extrabold poppins">
+          <p className="md:text-5xl text-3xl font-extrabold poppins md:text-start text-center">
             Choose Your <span className="text-green"> Departure Point</span>
           </p>
         </div>
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-6 gap-4">
           {cards.map((item, index) => (
             <div
               key={index}
               className="w-full border-[0.5px] border-[#D3F1F5] rounded-2xl bg-white p-5"
             >
               <img
-                className="rounded-xl h-[230px] object-cover w-full"
+                className="rounded-xl sm:h-[230px] h-[200px] object-cover w-full"
                 src={item.img}
                 alt={item.title}
               />

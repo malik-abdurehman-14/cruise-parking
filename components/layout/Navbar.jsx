@@ -90,7 +90,7 @@ function Navbar() {
       </nav>
       {/* mobile-nav */}
       <nav className="block md:hidden fixed top-0 left-0 z-50 w-full">
-        <div className="flex items-center justify-between gap-4 lg:px-16 px-5 py-5 bg-white backdrop-blur-3xl">
+        <div className="flex items-center justify-between gap-4 lg:px-16 px-5 py-6 bg-white backdrop-blur-3xl">
           {/* Logo */}
           <Link href="/">
             <Image
@@ -120,27 +120,27 @@ function Navbar() {
         onClose={() => setMenuDrawerOpen(false)}
         side="left"
       >
-        <div className="h-full flex flex-col bg-black text-white">
+        <div className="h-full flex flex-col bg-white text-black">
           {/* Header */}
-          <div className="flex items-center justify-between p-6 border-b border-white/10">
+          <div className="flex items-center justify-between p-6 border-b border-black/10">
             <h2 className="text-2xl font-bold space-grotesk">Menu</h2>
 
             <button
               onClick={() => setMenuDrawerOpen(false)}
-              className="text-white text-2xl cursor-pointer hover:opacity-70"
+              className="text-black text-2xl cursor-pointer hover:opacity-70"
             >
               ×
             </button>
           </div>
 
           {/* Navigation */}
-          <div className="flex flex-col p-6">
+          <div className="flex flex-col p-4">
             {navLinks.map((item, index) => (
               <Link
                 key={index}
                 href={item.link}
                 onClick={() => setMenuDrawerOpen(false)}
-                className="py-4 text-lg border-b border-white/10 transition-opacity hover:opacity-60"
+                className="py-4 text-lg border-b border-black/10 transition-opacity hover:opacity-60"
               >
                 {item.name}
               </Link>

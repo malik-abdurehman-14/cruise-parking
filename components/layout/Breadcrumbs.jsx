@@ -28,7 +28,7 @@ function Breadcrumbs() {
   const progress = ((activeStep - 1) / (steps.length - 0.8)) * 100;
 
   return (
-    <div className="w-full bg-gray-50 py-16 pt-44 px-28">
+    <div className="w-full bg-gray-50 py-16 lg:pt-44 pt-32 md:px-28 px-6">
       {/* Progress Line */}
       <div className="relative w-full h-1.5 sm:h-2 bg-gray-200 rounded-full">
         <div
@@ -48,7 +48,7 @@ function Breadcrumbs() {
           return (
             <div
               key={step}
-              className="flex items-center gap-1.5 sm:gap-2 min-w-0"
+              className="flex items-center gap-1 sm:gap-2 min-w-0"
             >
               {/* Number */}
               <div
@@ -65,7 +65,7 @@ function Breadcrumbs() {
               {/* Step Name */}
               <span
                 className={cn(
-                  "text-[10px] leading-tight sm:text-sm text-center font-medium transition-colors duration-300 max-w-[70px] sm:max-w-none",
+                  "text-[10px] leading-tight sm:text-sm text-center text-nowrap font-medium transition-colors duration-300 max-w-[70px] sm:max-w-none",
                   isActive ? "text-green" : "text-black",
                 )}
               >

@@ -73,9 +73,9 @@ function Blogs() {
   return (
     <>
       {/* tabs */}
-      <div className="w-full bg-gray-100 py-16 px-12">
-        <div className="flex items-center justify-between w-full gap-8">
-          <div className="flex items-center gap-2">
+      <div className="w-full bg-gray-100 lg:py-16 py-10 lg:px-12 px-6">
+        <div className="flex lg:flex-row flex-col items-center justify-between w-full gap-8">
+          <div className="flex md:flex-nowrap flex-wrap md:justify-start justify-center items-center gap-2">
             {tabs.map((tab) => (
               <div
                 key={tab.name}
@@ -89,7 +89,7 @@ function Blogs() {
               </div>
             ))}
           </div>
-          <div className="w-[20%]">
+          <div className="lg:w-[20%] w-[80%]">
             <Input
               placeholder="search articles..."
               variant="light"
@@ -99,26 +99,26 @@ function Blogs() {
         </div>
       </div>
       {/* card-1 */}
-      <div className="w-full bg-[#F8FEFF] py-12 px-12">
-        <div className="bg-white rounded-2xl flex h-[400px]">
-          <div className="w-[50%] h-full">
+      <div className="w-full bg-[#F8FEFF] py-12 lg:px-12 px-6">
+        <div className="bg-white rounded-2xl flex md:flex-row flex-col md:h-[400px] h-auto">
+          <div className="md:w-[50%] w-full md:h-full h-[250px]">
             <img
-              className="rounded-l-2xl w-full h-full object-cover"
+              className="md:rounded-l-2xl rounded-t-2xl w-full h-full object-cover"
               src="/blogs.png"
               alt=""
             />
           </div>
-          <div className="py-5 px-8 flex flex-col justify-center h-full gap-5 w-[50%]">
+          <div className="py-5 px-8 flex flex-col justify-center h-full gap-5 md:w-[50%] w-full">
             <p className="flex items-center justify-between w-full">
               <div className="bg-[#b4e7f0] text-green px-3 py-1 text-sm rounded-full">
                 Port Guides
               </div>
               <p className="text-sm">8 min read</p>
             </p>
-            <h3 className="text-2xl font-extrabold poppins">
+            <h3 className="sm:text-2xl text-xl font-extrabold poppins">
               Your Complete Guide to Southampton Cruise Terminal
             </h3>
-            <p className="text-lg">
+            <p className="sm:text-lg text-base">
               Everything you need to know about parking, check-in, and getting
               to the ship seamlessly — directly from a team who does this every
               single day on the ground.
@@ -143,9 +143,9 @@ function Blogs() {
         </div>
       </div>
       {/* lates-articles */}
-      <div className="w-full bg-gray-100 py-16 px-12 flex flex-col gap-12">
+      <div className="w-full bg-gray-100 sm:py-16 py-10 lg:px-12 px-6 flex flex-col gap-12">
         <h4 className="text-3xl font-extrabold poppins">Latest Articles</h4>
-        <div className="grid grid-cols-3 gap-7 w-full">
+        <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-7 gap-5 w-full">
           {cards.map((item, index) => (
             <BlogsCard
               img={item.img}

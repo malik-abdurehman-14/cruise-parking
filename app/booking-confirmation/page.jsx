@@ -11,9 +11,9 @@ function page() {
     <>
       <Navbar />
       <Breadcrumbs />
-      <section className="w-full flex flex-col gap-14 bg-gray-50 pb-16 pt-5 px-12">
+      <section className="w-full flex flex-col sm:gap-14 gap-10 bg-gray-50 pb-16 sm:pt-5 lg:px-12 px-6">
         <div className="flex flex-col items-center justify-center gap-4">
-          <div className="h-16 w-16 flex items-center justify-center text-green bg-[#D3F1F5] rounded-full">
+          <div className="sm:h-16 h-12 sm:w-16 w-12 flex items-center justify-center text-green bg-[#D3F1F5] rounded-full">
             <TiTick size={32} />
           </div>
           <h1 className="text-3xl font-extrabold poppins">
@@ -31,37 +31,51 @@ function page() {
           </p>
         </div>
         {/* forms */}
-        <div className="flex gap-8">
-          <div className="flex flex-col gap-7 w-[50%]">
+        <div className="flex md:flex-row flex-col gap-8">
+          <div className="flex flex-col gap-7 md:w-[50%] w-full">
             <div className="bg-white rounded-xl px-7 py-3 flex flex-col gap-3 w-full">
               <p className="text-2xl font-bold underline mb-3">
                 Contact Details
               </p>
-              <div className="w-full flex items-center justify-between mb-2 border-b border-gray-300 pb-1">
-                <p className="text-sm font-semibold">Full Name</p>
-                <p className="text-sm font-semibold">Abdurehman</p>
+              <div className="w-full flex items-center justify-between gap-2 mb-2 border-b border-gray-300 pb-1">
+                <p className="sm:text-sm text-xs font-semibold">Full Name</p>
+                <p className="sm:text-sm text-xs font-semibold">Abdurehman</p>
               </div>
-              <div className="w-full flex items-center justify-between mb-2 border-b border-gray-300 pb-1">
-                <p className="text-sm font-semibold">Email Address</p>
-                <p className="text-sm font-semibold">
+              <div className="w-full flex items-center justify-between gap-2 mb-2 border-b border-gray-300 pb-1">
+                <p className="sm:text-sm text-xs font-semibold">
+                  Email Address
+                </p>
+                <p className="sm:text-sm text-xs font-semibold">
                   abdurehmanzafar14@gmail.com
                 </p>
               </div>
-              <div className="w-full flex items-center justify-between mb-2 border-b border-gray-300 pb-1">
-                <p className="text-sm font-semibold">Phone Number</p>
-                <p className="text-sm font-semibold">+44 7700 900456</p>
+              <div className="w-full flex items-center justify-between gap-2 mb-2 border-b border-gray-300 pb-1">
+                <p className="sm:text-sm text-xs font-semibold">Phone Number</p>
+                <p className="sm:text-sm text-xs font-semibold">
+                  +44 7700 900456
+                </p>
               </div>
-              <div className="w-full flex items-center justify-between mb-2 border-b border-gray-300 pb-1">
-                <p className="text-sm font-semibold">Country / Region</p>
-                <p className="text-sm font-semibold">United Kingdom</p>
+              <div className="w-full flex items-center justify-between gap-2 mb-2 border-b border-gray-300 pb-1">
+                <p className="sm:text-sm text-xs font-semibold">
+                  Country / Region
+                </p>
+                <p className="sm:text-sm text-xs font-semibold">
+                  United Kingdom
+                </p>
               </div>
-              <div className="w-full flex items-center justify-between mb-2 border-b border-gray-300 pb-1">
-                <p className="text-sm font-semibold">Address Line 1</p>
-                <p className="text-sm font-semibold">10 High Street</p>
+              <div className="w-full flex items-center justify-between gap-2 mb-2 border-b border-gray-300 pb-1">
+                <p className="sm:text-sm text-xs font-semibold">
+                  Address Line 1
+                </p>
+                <p className="sm:text-sm text-xs font-semibold">
+                  10 High Street
+                </p>
               </div>
-              <div className="w-full flex items-center justify-between mb-2">
-                <p className="text-sm font-semibold">City / State</p>
-                <p className="text-sm font-semibold">Southampton, Hampshire</p>
+              <div className="w-full flex items-center justify-between gap-2 mb-2">
+                <p className="sm:text-sm text-xs font-semibold">City / State</p>
+                <p className="sm:text-sm text-xs font-semibold">
+                  Southampton, Hampshire
+                </p>
               </div>
             </div>
             <div className="bg-white rounded-xl px-7 py-3 flex flex-col gap-3 w-full">
@@ -95,7 +109,7 @@ function page() {
             </div>
           </div>
           {/* booking-summary */}
-          <div className="bg-[#F8FEFF] rounded-2xl border border-gray-400 flex flex-col gap-6 px-7 py-6 w-[50%] h-fit">
+          <div className="bg-[#F8FEFF] rounded-2xl border border-gray-400 flex flex-col gap-6 sm:px-7 px-5 py-6 md:w-[50%] w-full h-fit">
             <div className="flex items-center justify-between w-full">
               <p className="text-green text-base">Your Booking Summary</p>
               <p className="text-green text-xs font-bold">View Invoice</p>

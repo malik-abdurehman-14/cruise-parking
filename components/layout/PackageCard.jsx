@@ -3,7 +3,7 @@ import React from "react";
 function PackageCard({ img, title, desc, price, selected }) {
   return (
     <div
-      className={`relative w-full flex rounded-2xl h-[300px] bg-white overflow-hidden border-2 transition-all duration-300 ${
+      className={`relative w-full flex md:flex-row flex-col rounded-2xl lg:h-[300px] h-auto bg-white overflow-hidden border-2 transition-all duration-300 ${
         selected ? "border-green" : "border-transparent"
       }`}
     >
@@ -14,18 +14,18 @@ function PackageCard({ img, title, desc, price, selected }) {
         </div>
       )}
 
-      <div className="w-[50%]">
+      <div className="md:w-[50%] w-full">
         <img
-          className="rounded-l-2xl w-full h-full object-cover"
+          className="md:rounded-l-2xl rounded-t-2xl w-full md:h-full h-[220px] object-cover"
           src={img}
           alt=""
         />
       </div>
 
-      <div className="flex flex-col gap-3 px-7 py-6 justify-center w-[50%]">
-        <p className="text-2xl font-bold poppins">{title}</p>
+      <div className="flex flex-col gap-3 px-7 py-6 justify-center md:w-[50%] w-full">
+        <p className="sm:text-2xl text-xl font-bold poppins">{title}</p>
 
-        <p>{desc}</p>
+        <p className="sm:text-base text-sm">{desc}</p>
 
         <div className="flex items-center justify-between w-full">
           <p className="text-sm items-end">

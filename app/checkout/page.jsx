@@ -4,13 +4,14 @@ import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import Input from "@/components/ui/Input";
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
+import { Button } from "@/components/ui/Button";
 
 function page() {
   return (
     <>
       <Navbar />
       <Breadcrumbs />
-      <section className="w-full flex flex-col gap-9 bg-gray-50 pb-16 px-12">
+      <section className="w-full flex flex-col gap-9 bg-gray-50 pb-16 lg:px-12 px-6">
         <div className="bg-white rounded-xl px-7 py-3 text-base">
           Returning Customer?{" "}
           <a href="#" className="text-blue-600">
@@ -18,8 +19,8 @@ function page() {
           </a>
         </div>
         {/* forms */}
-        <div className="flex gap-8">
-          <div className="flex flex-col gap-7 w-[50%]">
+        <div className="flex md:flex-row flex-col-reverse gap-8">
+          <div className="flex flex-col gap-7 md:w-[50%] w-full">
             <div className="bg-white rounded-xl px-7 py-3 flex flex-col gap-3 w-full">
               <p className="text-2xl font-bold underline">
                 Billing Information
@@ -44,7 +45,7 @@ function page() {
                   className="py-2"
                 />
               </div>
-              <div className="flex gap-6">
+              <div className="flex sm:flex-row flex-col gap-6">
                 <div className="w-full">
                   <label htmlFor="" className="text-sm font-semibold mb-2">
                     Country / Region
@@ -76,7 +77,7 @@ function page() {
                   className="py-2"
                 />
               </div>
-              <div className="flex gap-6">
+              <div className="flex sm:flex-row flex-col gap-6">
                 <div className="w-full">
                   <label htmlFor="" className="text-sm font-semibold mb-2">
                     City
@@ -164,7 +165,7 @@ function page() {
                 </div>
 
                 {/* Expiry + CVV */}
-                <div className="flex gap-6">
+                <div className="flex sm:gap-6 gap-4">
                   <div className="w-full">
                     <label className="text-sm font-semibold block mb-2">
                       Expiry Date
@@ -177,7 +178,7 @@ function page() {
                     />
                   </div>
 
-                  <div className="w-full">
+                  <div className="w-full mb-2">
                     <label className="text-sm font-semibold block mb-2">
                       CVV
                     </label>
@@ -189,11 +190,18 @@ function page() {
                     />
                   </div>
                 </div>
+                <Button
+                  link="/booking-confirmation"
+                  title="Proceed"
+                  variant="light"
+                  padding="py-2 px-5"
+                  className="w-full rounded-full"
+                />
               </div>
             </div>
           </div>
           {/* booking-summary */}
-          <div className="bg-[#F8FEFF] rounded-2xl border border-gray-400 flex flex-col gap-6 px-7 py-6 w-[50%] h-fit">
+          <div className="bg-[#F8FEFF] rounded-2xl border border-gray-400 flex flex-col gap-6 px-7 py-6 md:w-[50%] w-full h-fit">
             <div className="flex items-center justify-between w-full">
               <p className="text-green text-base">Your Booking Summary</p>
               <p className="text-green text-xs font-bold">View Invoice</p>

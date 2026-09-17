@@ -21,9 +21,9 @@ function Packages() {
   ];
 
   return (
-    <section className="w-full flex flex-col gap-9 bg-gray-50 pb-16 px-12">
+    <section className="w-full flex flex-col gap-9 bg-gray-50 pb-16 lg:px-12 px-6">
       <div className="flex flex-col gap-4 w-full">
-        <h1 className="text-5xl font-extrabold poppins">
+        <h1 className="md:text-5xl text-3xl font-extrabold poppins">
           Choose Your <span className="text-green"> Parking Package</span>
         </h1>
         <p className="text-base">
@@ -32,21 +32,21 @@ function Packages() {
         </p>
       </div>
       {/* summary-card */}
-      <div className="bg-[#F8FEFF] rounded-2xl border border-gray-400 flex flex-col gap-9 px-7 py-6 w-full">
+      <div className="bg-[#F8FEFF] rounded-2xl border border-gray-400 flex flex-col gap-9 sm:px-7 px-5 py-6 w-full">
         <div className="flex items-center justify-between w-full">
-          <p className="text-green text-lg">Your Booking Summary</p>
+          <p className="text-green sm:text-lg">Your Booking Summary</p>
           <div>
             <Button
               link="/checkout"
               title="Proceed Payment"
               variant="light"
-              padding="px-8 py-1"
+              padding="sm:px-8 px-4 py-1"
               className="rounded-full"
             />
           </div>
         </div>
-        <div className="flex items-center justify-between gap-6">
-          <div className="flex flex-col gap-5">
+        <div className="flex sm:flex-row flex-col sm:items-center justify-between gap-6">
+          <div className="flex flex-col gap-5 sm:border-none border-b border-gray-400 sm:pb-0 pb-2">
             <div>
               <p className="text-sm text-green uppercase">
                 Departing Cruise Info
@@ -62,7 +62,7 @@ function Packages() {
               <p className="text-sm text-gray-700">Ship: Queen Mary 2</p>
             </div>
           </div>
-          <div className="flex flex-col gap-3 w-sm">
+          <div className="flex flex-col gap-3 md:w-sm sm:border-none border-b border-gray-400 sm:pb-0 pb-2">
             <div className="flex items-center gap-2 justify-between">
               <p className="text-sm text-gray-700">
                 Cruise car parking & drop-off service
@@ -86,7 +86,7 @@ function Packages() {
       </div>
       {/* packagees */}
       <h2 className="text-2xl font-extrabold poppins">Available Services</h2>
-      <div className="flex flex-col gap-8 w-full">
+      <div className="flex flex-col sm:gap-8 gap-5 w-full">
         {cards.map((item, index) => (
           <PackageCard
             key={index}
@@ -99,12 +99,12 @@ function Packages() {
         ))}
       </div>
       {/* Licenses */}
-      <div className="w-full bg-white rounded-2xl px-7 py-5">
+      <div className="w-full bg-white rounded-2xl sm:px-7 px-5 py-5">
         <p className="text-xl font-bold">Enter Licenses</p>
         <p className="text-sm font-bold my-2">
           Enter Licenses Number to fetch data
         </p>
-        <div className="flex items-center gap-3">
+        <div className="flex sm:flex-row flex-col items-center gap-3">
           <Input placeholder="LD25 ABC" variant="light" className="py-2" />
           <Button
             title="Fetch Data"
@@ -122,7 +122,7 @@ function Packages() {
           below. Our system will match your registration plate to a car
           automatically.
         </p>
-        <div className="grid grid-cols-2 w-full gap-5 mt-4">
+        <div className="grid sm:grid-cols-2 grid-cols-1 w-full sm:gap-5 gap-3 mt-4">
           <div className="w-full">
             <label htmlFor="" className="text-sm font-semibold mb-1">
               Car Registeration

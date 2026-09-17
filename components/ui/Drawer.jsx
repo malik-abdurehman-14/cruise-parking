@@ -39,7 +39,7 @@ function Drawer({ open, onClose, children }) {
 
       {/* Drawer */}
       <div
-        className={`fixed right-0 top-0 z-[9999] h-full sm:w-[500px] w-[300px] max-w-[90vw]
+        className={`fixed right-0 top-0 z-[9999] h-full sm:w-[500px] w-[250px] max-w-[90vw]
           bg-white text-black
           transition-transform duration-700
           ease-[cubic-bezier(0.4,0,0.2,1)]
