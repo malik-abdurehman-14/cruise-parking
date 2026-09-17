@@ -2,7 +2,7 @@ import React from "react";
 
 function Stats() {
   return (
-    <div className="bg-[#D3F1F5] py-10 px-16 grid grid-cols-4 gap-5">
+    <div className="bg-[#D3F1F5] py-10 lg:px-16 px-6 grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-5">
       <div className="flex flex-col items-center gap-1">
         <p className="text-4xl text-green font-extrabold poppins">10+ Years</p>
         <p className="text-base font-bold">Operating in Southampton</p>

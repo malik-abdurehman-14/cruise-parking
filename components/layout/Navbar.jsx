@@ -90,26 +90,14 @@ function Navbar() {
       </nav>
       {/* mobile-nav */}
       <nav className="block md:hidden fixed top-0 left-0 z-50 w-full">
-        <div className="flex items-center justify-between gap-4 lg:px-16 px-5 py-6 bg-white backdrop-blur-3xl">
-          {/* Icons */}
-          <div className="flex items-center gap-3 text-black">
-            <button
-              onClick={() => setMenuDrawerOpen(true)}
-              className="cursor-pointer transition-opacity hover:opacity-70"
-            >
-              <RiMenuUnfoldLine size={21} />
-            </button>
-            <button className="cursor-pointer transition-opacity hover:opacity-70">
-              <Search size={21} />
-            </button>
-          </div>
+        <div className="flex items-center justify-between gap-4 lg:px-16 px-5 py-5 bg-white backdrop-blur-3xl">
           {/* Logo */}
           <Link href="/">
             <Image
               src="/logo.png"
               alt="VUSELO"
-              width={120}
-              height={60}
+              width={150}
+              height={100}
               priority
               className="h-auto"
             />
@@ -117,21 +105,11 @@ function Navbar() {
           {/* Icons */}
           <div className="flex items-center gap-3 text-black">
             <button
-              onClick={() => setCartDrawerOpen(true)}
-              className="relative cursor-pointer transition-opacity hover:opacity-70"
-            >
-              <ShoppingBag size={21} />
-
-              {/* Notification Dot */}
-              <span className="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-froozen border-2 border-black" />
-            </button>
-
-            <a
-              href="/login"
+              onClick={() => setMenuDrawerOpen(true)}
               className="cursor-pointer transition-opacity hover:opacity-70"
             >
-              <UserRoundArrowLeft size={21} />
-            </a>
+              <RiMenuUnfoldLine size={24} />
+            </button>
           </div>
         </div>
       </nav>

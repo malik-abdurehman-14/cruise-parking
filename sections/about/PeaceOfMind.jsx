@@ -35,17 +35,17 @@ function PeaceOfMind() {
     },
   ];
   return (
-    <section className="w-full px-12 py-28 flex gap-10 bg-gray-100">
-      <div className="w-[50%]">
+    <section className="w-full lg:px-12 px-6 sm:py-28 py-20 flex md:flex-row flex-col-reverse sm:gap-10 gap-7 bg-gray-100">
+      <div className="md:w-[50%] w-full">
         <img
-          className="rounded-xl h-[65vh] w-full object-cover"
+          className="rounded-xl md:h-[65vh] h-[30vh] w-full object-cover"
           src="/peace.png"
           alt=""
         />
       </div>
-      <div className="flex flex-col gap-4 w-[50%]">
+      <div className="flex flex-col gap-4 md:w-[50%] w-full">
         <p className="text-sm text-green uppercase">YOUR PEACE OF MIND</p>
-        <p className="text-5xl font-extrabold poppins max-w-xl">
+        <p className="sm:text-5xl text-3xl font-extrabold poppins max-w-xl">
           Safe, Secure, Always <span className="text-green">Staffed.</span>
         </p>
         <p className="text-base">

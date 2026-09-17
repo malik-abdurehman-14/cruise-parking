@@ -32,18 +32,20 @@ function OurTeam() {
   ];
 
   return (
-    <section className="w-full flex flex-col gap-9 bg-[#F8FEFF] py-16 px-12">
+    <section className="w-full flex flex-col gap-9 bg-[#F8FEFF] py-16 lg:px-12 px-6">
       <div className="flex flex-col gap-3 items-center justify-center w-full">
         <p className="text-sm text-green uppercase">
           THE PEOPLE BEHIND THE SERVICE
         </p>
-        <p className="text-5xl font-extrabold poppins">Meet the Team</p>
+        <p className="md:text-5xl text-3xl font-extrabold poppins">
+          Meet the Team
+        </p>
       </div>
-      <div className="grid grid-cols-4 gap-5">
+      <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5">
         {team.map((item, index) => (
           <div
             key={index}
-            className="group relative sm:h-[400px] h-[250px] rounded-2xl overflow-hidden flex flex-col justify-end w-full"
+            className="group relative md:h-[400px] h-[280px] rounded-2xl overflow-hidden flex flex-col justify-end w-full"
           >
             {" "}
             {/* Background Image */}{" "}

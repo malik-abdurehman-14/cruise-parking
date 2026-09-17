@@ -567,7 +567,7 @@ function Hero() {
           <div
             className="
         relative
-        h-[250px]
+        h-[240px]
         w-full
         overflow-hidden
 

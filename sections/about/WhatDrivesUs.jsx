@@ -19,21 +19,21 @@ function WhatDrivesUs() {
     },
   ];
   return (
-    <section className="w-full flex flex-col gap-9 bg-gray-100 py-28 px-12">
+    <section className="w-full flex flex-col gap-9 bg-gray-100 sm:py-28 py-16 lg:px-12 px-6">
       <div className="flex flex-col gap-3 items-center justify-center w-full">
         <p className="text-sm text-green uppercase">What drives us</p>
-        <p className="text-5xl font-extrabold poppins">
+        <p className="md:text-5xl text-3xl font-extrabold poppins text-center">
           More Than Just <span className="text-green"> Parking.</span>
         </p>
       </div>
-      <div className="grid grid-cols-3 gap-5">
+      <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5">
         {cards.map((item, index) => (
           <div
             key={index}
             className="w-full border-[0.5px] border-[#D3F1F5] rounded-2xl bg-white"
           >
             <img
-              className="rounded-t-2xl h-[250px] object-cover w-full"
+              className="rounded-t-2xl sm:h-[250px] h-[150px] object-cover w-full"
               src={item.img}
               alt={item.title}
             />
