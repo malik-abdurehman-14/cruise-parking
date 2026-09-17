@@ -36,10 +36,10 @@ function TrustSection() {
   ];
 
   return (
-    <section className="w-full px-12 py-14 flex gap-10 bg-[#F8FEFF]">
-      <div className="flex flex-col gap-4 w-[50%]">
+    <section className="w-full lg:px-12 px-6 py-14 flex md:flex-row flex-col md:gap-10 gap-7 bg-[#F8FEFF]">
+      <div className="flex flex-col gap-4 md:w-[50%] w-full">
         <p className="text-sm text-green uppercase">Your car is safe with us</p>
-        <p className="text-6xl font-extrabold poppins max-w-xl">
+        <p className="md:text-6xl text-3xl font-extrabold poppins max-w-xl">
           Family-Run, Here Every{" "}
           <span className="text-green">Step Of The Way</span>
         </p>
@@ -49,7 +49,7 @@ function TrustSection() {
           mind — so you can enjoy every moment at sea without a second thought
           about your vehicle.
         </p>
-        <div className="grid grid-cols-2 space-x-4 space-y-5 mt-2">
+        <div className="grid sm:grid-cols-2 grid-cols-1 space-x-4 space-y-5 mt-2">
           {data.map((item, index) => (
             <div className="flex items-center gap-2">
               <p className="text-green">{item.icon}</p>
@@ -61,7 +61,7 @@ function TrustSection() {
           ))}
         </div>
       </div>
-      <div className="w-[50%]">
+      <div className="md:w-[50%] w-full">
         <img
           className="rounded-xl h-full object-cover"
           src="/trust.png"

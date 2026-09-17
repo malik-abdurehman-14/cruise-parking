@@ -11,15 +11,22 @@ function Brands() {
     "/b7.png",
     "/b8.png",
   ];
+
   return (
-    <section className="w-full flex flex-col gap-10 bg-gray-100 py-14 px-12">
+    <section className="w-full flex flex-col gap-10 bg-gray-100 py-14 lg:px-12 px-6">
       <p className="text-xl poppins font-extrabold uppercase text-center">
         Proudly serving all top cruise passengers
       </p>
-      <div className="w-full flex gap-5 justify-between items-center">
+
+      <div className="w-full flex lg:flex-nowrap flex-wrap sm:gap-5 gap-3 lg:justify-between justify-center items-center">
         {brands.map((item, index) => (
-          <div className="bg-white p-6 rounded-xl w-full flex justify-center">
-            <img className="w-auto h-[40px]" key={index} src={item} alt="" />
+          <div
+            key={index}
+            className={`bg-white sm:p-6 p-4 rounded-xl lg:w-full sm:w-[150px] w-[100px] flex justify-center ${
+              index >= 5 ? "hidden sm:flex" : "flex"
+            }`}
+          >
+            <img className="w-auto h-[40px]" src={item} alt="" />
           </div>
         ))}
       </div>

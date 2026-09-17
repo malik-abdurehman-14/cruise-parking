@@ -49,11 +49,11 @@ export function Faqs() {
   };
 
   return (
-    <section className="w-full flex flex-col gap-10 py-16 px-12 items-center bg-gray-100">
+    <section className="w-full flex flex-col gap-10 py-16 lg:px-12 px-6 items-center bg-gray-100">
       {/* Header */}
       <div className="w-full flex flex-col gap-3 justify-center items-center">
         <p className="text-sm text-green uppercase">NEED TO KNOW</p>
-        <p className="text-5xl font-extrabold poppins text-center max-w-xl">
+        <p className="md:text-5xl text-3xl font-extrabold poppins text-center max-w-xl">
           Questions Answered <span className="text-green"> Before You Go.</span>
         </p>
         <p className="text-center text-base">
@@ -77,7 +77,7 @@ export function Faqs() {
                 onClick={() => toggle(faq.id)}
                 className="w-full flex justify-between items-center py-5 gap-5 text-left"
               >
-                <span className="sm:text-lg text-md font-semibold text-gray-900">
+                <span className="sm:text-lg text-base font-semibold text-gray-900">
                   {faq.question}
                 </span>
 
@@ -92,7 +92,9 @@ export function Faqs() {
                   isOpen ? "max-h-40 pb-5" : "max-h-0"
                 }`}
               >
-                <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
+                <p className="text-gray-600 leading-relaxed sm:text-base text-sm">
+                  {faq.answer}
+                </p>
               </div>
             </div>
           );

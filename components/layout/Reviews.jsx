@@ -28,15 +28,15 @@ function Reviews() {
   ];
 
   return (
-    <section className="w-full flex flex-col gap-10 bg-gray-100 py-14 px-12">
+    <section className="w-full flex flex-col gap-10 bg-gray-100 py-14 lg:px-12 px-6">
       <div className="w-full flex flex-col gap-3 justify-center items-center">
         <p className="text-sm text-green uppercase">Reviews</p>
-        <p className="text-5xl font-extrabold poppins text-center">
+        <p className="md:text-5xl text-3xl font-extrabold poppins text-center">
           What Our <span className="text-green">Travellers</span> Say
         </p>
       </div>
-      <div className="w-full flex justify-between gap-10">
-        <div className="w-[40%]">
+      <div className="w-full flex justify-between lg:gap-10 gap-5">
+        <div className="hidden md:block w-[40%]">
           <div className="group relative sm:h-[350px] h-[250px] rounded-2xl overflow-hidden flex flex-col justify-end w-full">
             {" "}
             {/* Background Image */}{" "}
@@ -67,13 +67,13 @@ function Reviews() {
             </div>{" "}
           </div>
         </div>
-        <div className="w-[55%] flex flex-col gap-4">
+        <div className="md:w-[55%] w-full flex flex-col sm:gap-4 gap-6">
           {data.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col gap-3 border-l-2 border-[#70deec] pl-4"
+              className="flex flex-col sm:gap-3 gap-5 border-l-2 border-[#70deec] pl-4"
             >
-              <p className="text-lg">{item.review}</p>
+              <p className="sm:text-lg text-base">{item.review}</p>
               <div className="flex items-center gap-2">
                 <img
                   className="h-10 w-10 rounded-full object-cover"

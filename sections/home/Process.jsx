@@ -38,10 +38,10 @@ function Process() {
   ];
 
   return (
-    <section className="w-full flex flex-col gap-10 bg-gray-100 py-14 px-12">
+    <section className="w-full flex flex-col gap-10 bg-gray-100 py-14 lg:px-12 px-6">
       <div className="w-full flex flex-col gap-3 justify-center items-center">
         <p className="text-sm text-green">SIMPLE PROCESS</p>
-        <p className="text-5xl font-extrabold poppins max-w-2xl text-center">
+        <p className="md:text-5xl text-3xl font-extrabold poppins max-w-2xl text-center">
           Welcome to Cruise Parking in{" "}
           <span className="text-green">Southampton.</span>
         </p>
@@ -51,7 +51,7 @@ function Process() {
         </p>
       </div>
       {/* cards */}
-      <div className="grid grid-cols-4 gap-7">
+      <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 sm:gap-7 gap-5">
         {cards.map((item, index) => (
           <div
             key={index}

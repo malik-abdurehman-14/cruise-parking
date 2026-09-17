@@ -3,10 +3,10 @@ import Image from "next/image";
 
 function WhyUs() {
   return (
-    <section className="w-full flex flex-col gap-10 bg-gray-100 py-14 px-12">
+    <section className="w-full flex flex-col gap-10 bg-gray-100 py-14 lg:px-12 px-6">
       <div className="w-full flex flex-col gap-3 justify-center items-center">
         <p className="text-sm text-green uppercase">Our promise</p>
-        <p className="text-5xl font-extrabold poppins text-center">
+        <p className="md:text-5xl text-3xl font-extrabold poppins text-center">
           Why Choose <span className="text-green">Us</span>
         </p>
         <p className="max-w-sm text-center text-base">
@@ -15,7 +15,7 @@ function WhyUs() {
         </p>
       </div>
       <div className="w-full flex flex-col gap-4">
-        <div className="group relative sm:h-[350px] h-[250px] rounded-2xl overflow-hidden flex flex-col justify-end">
+        <div className="group relative md:h-[350px] h-[250px] rounded-2xl overflow-hidden flex flex-col justify-end">
           {" "}
           {/* Background Image */}{" "}
           <Image
@@ -37,8 +37,8 @@ function WhyUs() {
             </p>{" "}
           </div>{" "}
         </div>
-        <div className="w-full flex gap-4">
-          <div className="group relative sm:h-[350px] h-[250px] rounded-2xl overflow-hidden flex flex-col justify-end w-full">
+        <div className="w-full flex md:flex-row flex-col gap-4">
+          <div className="group relative md:h-[350px] h-[250px] rounded-2xl overflow-hidden flex flex-col justify-end w-full">
             {" "}
             {/* Background Image */}{" "}
             <Image
@@ -60,7 +60,7 @@ function WhyUs() {
               </p>{" "}
             </div>{" "}
           </div>
-          <div className="group relative sm:h-[350px] h-[250px] rounded-2xl overflow-hidden flex flex-col justify-end w-full">
+          <div className="group relative md:h-[350px] h-[250px] rounded-2xl overflow-hidden flex flex-col justify-end w-full">
             {" "}
             {/* Background Image */}{" "}
             <Image
