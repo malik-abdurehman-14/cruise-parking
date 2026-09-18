@@ -60,7 +60,7 @@ function Navbar() {
           {/* Logo */}
           <Link href="/">
             <Image
-              src="/logo.png"
+              src="/new-logo.png"
               alt="VUSELO"
               width={180}
               height={80}
@@ -94,7 +94,7 @@ function Navbar() {
           {/* Logo */}
           <Link href="/">
             <Image
-              src="/logo.png"
+              src="/new-logo.png"
               alt="VUSELO"
               width={150}
               height={100}
